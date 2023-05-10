@@ -9,6 +9,7 @@ import RMGameScreen from "../src/screens/RMGameScreen";
 import SplashScreen from "./screens/SplashScreen";
 import { View } from "react-native-web";
 import { styles } from "./utils/style";
+import TelaAulaRevisao from "./screens/TelaAulaRevisao";
 
 const Stack = createNativeStackNavigator();
 
@@ -79,6 +80,20 @@ function TabsNavigation() {
         component={RegisterScreen}
         options={{
           tabBarLabel: "Registro",
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons
+              name="account-plus"
+              color={color}
+              size={26}
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="TelaAulaRevisao"
+        component={TelaAulaRevisao}
+        options={{
+          tabBarLabel: "Aula",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
               name="account-plus"

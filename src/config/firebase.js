@@ -13,10 +13,15 @@ const firebaseConfig = {
   projectId: "toyotta-669bb",
   storageBucket: "toyotta-669bb.appspot.com",
   messagingSenderId: "437478794798",
-  appId: "1:437478794798:web:92c1b2de761bbf5cd0e1bf",
+  appId: "1:437478794798:web:92c1b2de761bbf5cd0e1bf"
 };
 
+
 // Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
+
+export default { app, db, auth };
+
