@@ -1,20 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import RootNavigation from "./src";
+import { DefaultTheme, Provider as NativeProvider } from "react-native-paper";
 
 export default function App() {
+  const theme = {
+    ...DefaultTheme,
+    roundness: 2,
+    colors: {
+      ...DefaultTheme.colors,
+      primary: "#fff",
+      accent: "#000000",
+      onSurfaceVariant: "#FFFFFF",
+    },
+  };
   return (
-    <View style={styles.container}>
-      <Text>Joguinho da Toyotaaaa !</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NativeProvider theme={theme}>
+      <RootNavigation />
+    </NativeProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
