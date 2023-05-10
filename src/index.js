@@ -8,7 +8,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import RMGameScreen from "../src/screens/RMGameScreen";
 import SplashScreen from "./screens/SplashScreen";
 import { View } from "react-native-web";
-import { styles } from "./utils/styles";
+import { styles } from "./utils/style";
 
 const Stack = createNativeStackNavigator();
 

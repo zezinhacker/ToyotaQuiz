@@ -3,7 +3,7 @@ import { useState } from "react";
 import { View } from "react-native";
 import { Button, Paragraph, Text, TextInput } from "react-native-paper";
 import { auth } from "../config/firebase";
-import { styles } from "../utils/styles";
+import { styles } from "../utils/style";
 import { Image } from "react-native-web";
 
 export default function RegisterScreen({ navigation }) {

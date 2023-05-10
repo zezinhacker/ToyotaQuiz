@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Image, View } from "react-native";
 import { Button, Text, TextInput } from "react-native-paper";
 import { auth } from "../config/firebase";
-import { styles } from "../utils/styles";
+import { styles } from "../utils/style";
 
 export default function LoginScreen() {
   const [email, setEmail] = useState("");

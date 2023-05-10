@@ -1,6 +1,6 @@
 import { View } from "react-native";
 import { ActivityIndicator, Text } from "react-native-paper";
-import { styles } from "../utils/styles";
+import { styles } from "../utils/style";
 
 export default function SplashScreen({ navigation }) {
   setTimeout(() => {

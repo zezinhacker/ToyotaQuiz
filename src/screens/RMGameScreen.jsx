@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Image, View } from "react-native";
 import { Button, Text } from "react-native-paper";
-import { styles } from "../utils/styles";
+import { styles } from "../utils/style";
 
 const Resp = "";
 
